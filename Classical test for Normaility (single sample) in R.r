@@ -19,22 +19,22 @@ y2[52]<-21.75
 plot(y2)
 #view the summary stats
 #This gives us six pieces of information about the vector called y. 
-#The smallest value is 1.904 (labelled Min. for minimum) 
-#and the largest value is 2.984 (labelled Max. for maximum). 
-There are two measures of central tendency: the median is 2.414 
+#The smallest value is 1.904 (labeled Min. for minimum) 
+#and the largest value is 2.984 (labeled Max. for maximum). 
+#There are two measures of central tendency: the median is 2.414 
 #and the arithmetic mean in 2.419.
 
 summary( das$y)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
   1.904   2.241   2.414   2.419   2.568   2.984
-#creates a quantile–quantile plot, This shows a slight S-shape, 
-#but there is no compelling evidence of non-normality
+#creates a quantile–quantile plot, which shows a slight S-shape, 
+#but there is no compelling evidence of non-normality.
 qqnorm( das$y )
 qqline( das$y, lty=2)
 
 #One test we might use is the Shapiro-Wilks normality test (shapiro.test  in R) 
-#for testing whether the data in a vector come from a normal distribution. 
-#Let’s generate some data that are lognormally distributed:
+#for testing whether the data in a vector comes from a normal distribution. 
+#Let’s generate some data that is lognormally distributed:
 dasX <-exp(rnorm(30))
 #What does this look like?
 hist( dasX )
