@@ -1,3 +1,5 @@
+#NASDAQ PRICE INDEX ANALYSIS - 2016 @JJRyan0
+
 install.packages("reshape2")
 install.packages("ellipse")
 install.packages("ggplot2")
